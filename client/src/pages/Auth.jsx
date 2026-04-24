@@ -38,6 +38,7 @@ import React from 'react'
 import { BsRobot } from "react-icons/bs";
 import { IoSparkles } from "react-icons/io5";
 import { motion } from "motion/react";
+import { FcGoogle } from "react-icons/fc";
 
 const Auth = () => {
   return (
@@ -67,6 +68,14 @@ const Auth = () => {
           Sign in to start AI-powered mock interviews, 
           track your progress, and unlock detailed performance insights.
         </p>
+        <motion.button
+        whileHover={{opacity:0.9 , scale:1.03}}
+        whileTap={{opacity:1 , scale:0.9}}
+         className='w-full flex items-center justify-center gap-3 py-3 bg-black text-white rounded-full shadow-md'>
+             <FcGoogle size={20} />
+             Continue With Google
+
+        </motion.button>
       </motion.div>
     </div>
   )
